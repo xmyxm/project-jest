@@ -23,7 +23,6 @@ function goPost() {
     })
 }
 
-
-//getText()
-//getJson()
-goPost()
+exports.getText = getText
+exports.getJson = getJson
+exports.goPost = goPost

@@ -1,0 +1,28 @@
+{
+  "name": "project-jest",
+  "version": "1.0.0",
+  "description": "cxf",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmyxm/project-jest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xmyxm/project-jest/issues"
+  },
+  "homepage": "https://github.com/xmyxm/project-jest#readme"
+}
