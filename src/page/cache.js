@@ -4,7 +4,7 @@ const print = require('../lib/print')
 
 let cache = {}
 
-function addCache(data){
+function addCache(data) {
 	let result = isEmpty(data)
 	if (result) {
 		cache = Object.assign(cache, result)
@@ -16,7 +16,7 @@ function addCache(data){
 	}
 }
 
-function getCache(key){
+function getCache(key) {
 	if (key && cache[key]) {
 		return cache[key]
 	} else {
@@ -25,7 +25,7 @@ function getCache(key){
 	}
 }
 
-function delCache(key){
+function delCache(key) {
 	if (key && cache[key]) {
 		delete cache[key]
 		return true
