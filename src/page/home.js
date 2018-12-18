@@ -1,25 +1,25 @@
 
 const fetch = require('../lib/fetch')
 
-function getText() {
+function getText(susCall) {
     let url = 'https://github.com/'
-    fetch.Text(url).then(res => {
-        console.log(res.data)
+    return fetch.Text(url).then(res => {
+        susCall && susCall(res.data)
     })
 }
 
-function getJson() {
+function getJson(susCall) {
     let url = 'https://api.github.com/users/github'
-    fetch.Json(url).then(res => {
-        console.log(res.data)
+    return fetch.Json(url).then(res => {
+        susCall && susCall(res.data)
     })
 }
 
-function goPost() {
+function goPost(susCall) {
     let url = 'https://httpbin.org/post'
     let data = { name: 'jest' }
-    fetch.Post(url, data).then(res => {
-        console.log(res.data)
+    return fetch.Post(url, data).then(res => {
+        susCall && susCall(res.data)
     })
 }
 
